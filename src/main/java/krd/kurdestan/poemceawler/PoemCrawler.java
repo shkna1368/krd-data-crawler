@@ -39,7 +39,7 @@ List<PoemEntity> poems = new ArrayList<>();
         Elements bookList = doc.select("div.textcontent");
 
         StringBuilder stringBuilder=new StringBuilder();
-        bookList.forEach(author -> {
+        bookList.stream().parallel().forEach(author -> {
 
             Elements cardElements = author.select("div.H.R,div.H.L");
 
@@ -111,6 +111,17 @@ String value=node.toString();
 
             });
 //poems.forEach(poemEntity -> poemEntity.setCompleteContent(stringBuilder.toString()));
+
+
+            var cmpContent= stringBuilder.toString();
+            poemEntity.setCompleteContent(cmpContent);
+
+            String tags=saveTags(poemEntity);
+            poemEntity.setTag(tags);
+
+
+
+
             String limitter='\n'+"************"+'\n';
 String poemTitle="شیعر:"+poemEntity.getTitle()+'\n';
 String poemBook="لە کتێبی:"+poemEntity.getBookName()+'\n';
@@ -126,12 +137,12 @@ stringBuilder.append(limitter);
 
 
 
-           var cmpContent= stringBuilder.toString();
+            cmpContent= stringBuilder.toString();
             if (cmpContent != null && !cmpContent.trim() .equals("") ) {
                 poemEntity.setCompleteContent(cmpContent);
 
-                String tags=saveTags(poemEntity);
-                poemEntity.setTag(tags);
+       /*         String tags=saveTags(poemEntity);
+                poemEntity.setTag(tags);*/
  /*             List<PoemEntity> poemEntities=new ArrayList<>();
                  tags.forEach(tag -> {
                      poemEntity.setTag(tag);
