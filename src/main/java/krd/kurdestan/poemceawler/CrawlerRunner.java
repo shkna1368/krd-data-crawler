@@ -36,7 +36,7 @@ public class CrawlerRunner implements CommandLineRunner {
     FailRepository failRepository;
 
 
-    boolean crawl=true;
+    boolean crawl=false;
 
 
 
