@@ -1,20 +1,0 @@
-
-~
-java:S6813"BRemove this field injection and use constructor injection instead.(êæÄÞJ$d6b217db-609a-4044-b5a6-394303027ae7
-~
-java:S6813"BRemove this field injection and use constructor injection instead.(êæÄÞJ$28dd9360-3d00-4441-9b3e-fb5c076b7212
-~
-java:S6813"BRemove this field injection and use constructor injection instead.(êæÄÞJ$5bf378b1-92a6-4521-a78a-1c607e7cd912
-~
-java:S6813"BRemove this field injection and use constructor injection instead.(êæÄÞJ$246f1b9e-c9d3-476c-b8cd-773ad7685f78
-~
-java:S6813#"BRemove this field injection and use constructor injection instead.(êæÄÞJ$e6d534e8-f935-4848-9480-690e6d769e5a
-|	java:S125"<This block of commented-out lines of code should be removed.(‡áÉÚÿÿÿÿÿJ$759d6b11-13e5-4d74-a48c-3ab8e8580626
-f	java:S1062"+Replace this use of System.out by a logger.(À•˜‡J$872f4aab-7352-4a0f-ac7f-a6506557feb7
-|	java:S125B"<This block of commented-out lines of code should be removed.(Š¤”ÖþÿÿÿÿJ$06e65bf0-1a78-48ad-8392-3df2e39f25d5
-h
-java:S1602Q",Remove useless curly braces around statement(ƒ¬‚J$1233b531-53ad-4cf1-85e2-8abb9bf1a0ac
-k	java:S106["+Replace this use of System.out by a logger.(•þ×ÈøÿÿÿÿJ$c13b3d01-746d-4ee1-856a-355fea3fd148
-f	java:S106d"+Replace this use of System.out by a logger.(´É¥ÍJ$3b75ada4-2613-4af9-be96-5b3854c0c414
-f	java:S106i"+Replace this use of System.out by a logger.(½Øµ³J$72627a7d-8b70-4f2d-9080-1554bc5d820b
-w	java:S125k"<This block of commented-out lines of code should be removed.(ÍîžùJ$e9374226-dee6-4268-846d-6f42a7457998
