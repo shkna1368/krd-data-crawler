@@ -1,0 +1,45 @@
+
+
+
+server:
+  port: 9090
+---
+
+spring:
+  jpa:
+    properties:
+      hibernate:
+        jdbc:
+          batch_size: 100
+          batch_versioned_data: true
+          fetch_size: 500
+        order_inserts: true
+
+        generate_statistics: false
+    database-platform: org.hibernate.dialect.PostgreSQLDialect
+    database: POSTGRESQL
+    hibernate:
+      #ddl-auto: create-drop
+      ddl-auto: update
+    show-sql: false
+
+  batch:
+    job:
+      enabled: false
+    jdbc:
+      initialize-schema: always
+
+  datasource:
+    url: jdbc:postgresql://localhost:5432/kurd_poem
+    username: postgres
+    password: postgres
+
+
+
+
+
+
+
+
+
+
